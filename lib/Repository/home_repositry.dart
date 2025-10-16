@@ -1,0 +1,10 @@
+import 'package:wetherapp/Data/Network/api_services.dart';
+import 'package:wetherapp/Resources/APPUrl/app_url.dart';
+
+class HomeRepositry {
+  static Future<dynamic> hitApi() async {
+    var response = await ApiServices().getApi(AppUrl.url);
+    return response;
+  }
+}
+
