@@ -50,7 +50,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   const SizedBox(height: 20),
                   const CustomAppBar(),
                   const SizedBox(height: 20),
-                  Location(),
+                  const Location(),
                   const Hero(
                     tag: 'Tag',
                     child: Material(

@@ -16,8 +16,12 @@ import 'package:wetherapp/View/Home/home_screen.dart';
 class HomeController extends Notifier<HomeState> {
   @override
   HomeState build() {
+    ref.onDispose((){
+      debugPrint('HomeController disposed');
+    });
     return const HomeState();
   }
+
 
   String getHour(int index) =>
       Utilities.formateTimeWithoutAmPm(state.model!.days![0].hours![index].datetime.toString());

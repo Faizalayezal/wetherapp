@@ -99,6 +99,5 @@ class _NextDaysState extends ConsumerState<NextDays> {
       final model = DataModel.fromJson(jsonMap);
       print("-------------100>>>${model.toJson()}");
     }
-
   }
 }

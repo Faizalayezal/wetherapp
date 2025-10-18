@@ -29,9 +29,7 @@ class _HoursListState extends ConsumerState<HoursList> {
 
           return GestureDetector(
             onTap: () {
-              setState(() {
                 setData.setHour(index);
-              });
             },
             child: Column(
               children: [

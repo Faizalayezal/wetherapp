@@ -37,7 +37,7 @@ class _DaysListState extends ConsumerState<DaysList> {
         itemBuilder: (ctx, index) {
           return GestureDetector(
             onTap: () {
-              ref.read(daysProvider.notifier).setDay(index,ref);
+              setDayData.setDay(index,ref);
             },
             child: Container(
               width: 70,

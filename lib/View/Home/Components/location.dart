@@ -47,7 +47,7 @@ class Location extends ConsumerWidget {
             padding: const EdgeInsets.all(20.0),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(20),
-              child: Image.asset(ImageAssets.map,fit: BoxFit.cover,),
+              child: Image.asset(ImageAssets.map,fit: BoxFit.cover),
             ),
           ),
         )
